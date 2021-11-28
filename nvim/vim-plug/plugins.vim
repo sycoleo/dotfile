@@ -16,5 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     " LeaderF
     Plug 'Yggdroot/LeaderF'
+    " dev icon
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()

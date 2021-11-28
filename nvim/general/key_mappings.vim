@@ -6,3 +6,13 @@ nnoremap <M-l>    :vertical resize +2<CR>
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
+
+" switch focus
+map sh <C-w>h
+map sk <C-w>k
+map sj <C-w>j
+map sl <C-w>l
+
+" start or end
+nnoremap L $
+nnoremap H ^
