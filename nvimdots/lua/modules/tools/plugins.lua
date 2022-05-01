@@ -16,6 +16,10 @@ tools["nvim-telescope/telescope-fzf-native.nvim"] = {
     run = "make",
     after = "telescope.nvim"
 }
+tools["nvim-telescope/telescope-project.nvim"] = {
+	opt = true,
+	after = "telescope-fzf-native.nvim",
+}
 tools["folke/trouble.nvim"] = {
     opt = true,
     cmd = {"Trouble", "TroubleToggle", "TroubleRefresh"},

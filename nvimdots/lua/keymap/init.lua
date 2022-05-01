@@ -37,6 +37,8 @@ local plug_map = {
         :with_silent(),
     -- Plugin SymbolsOutline
     ["n|<A-t>"] = map_cr("SymbolsOutline"):with_noremap():with_silent(),
+    ["n|<C-m>"] = map_cu('lua require("FTerm").toggle()'):with_noremap():with_silent(),
+    ["n|<Leader>g"] = map_cu("lua require('FTerm').run('gitui')"):with_noremap():with_silent(),
 }
 
 bind.nvim_load_mapping(plug_map)

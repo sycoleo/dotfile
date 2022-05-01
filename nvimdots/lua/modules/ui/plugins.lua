@@ -14,5 +14,5 @@ ui["akinsho/nvim-bufferline.lua"] = {
     event = "BufRead",
     config = conf.nvim_bufferline
 }
-
+ui["glepnir/dashboard-nvim"] = { opt = true, event = "BufWinEnter" }
 return ui

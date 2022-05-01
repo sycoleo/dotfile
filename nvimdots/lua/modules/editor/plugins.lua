@@ -24,4 +24,5 @@ editor["SmiteshP/nvim-gps"] = {
     after = "nvim-treesitter",
     config = conf.nvim_gps
 }
+editor["numtostr/FTerm.nvim"] = { opt = true, event = "BufRead" }
 return editor

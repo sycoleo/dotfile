@@ -1,11 +1,13 @@
 local config = {}
 
 function config.telescope()
-    local home = os.getenv("HOME")
-
-    if not packer_plugins["telescope-fzf-native.nvim"].loaded then
-        vim.cmd [[packadd telescope-fzf-native.nvim]]
-    end
+--    local home = os.getenv("HOME")
+--
+--   if not packer_plugins["telescope-fzf-native.nvim"].loaded then
+--        vim.cmd [[packadd telescope-fzf-native.nvim]]
+--    end
+    vim.cmd [[packadd telescope-fzf-native.nvim]]
+    vim.cmd([[packadd telescope-project.nvim]])
 
     require("telescope").setup {
         defaults = {
@@ -44,6 +46,7 @@ function config.telescope()
     }
 
     require("telescope").load_extension("fzf")
+	require("telescope").load_extension("project")
 end
 
 function config.trouble()
